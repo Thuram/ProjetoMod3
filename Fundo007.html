@@ -4,15 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de CSS</title>
+    <title>Container e conteudo</title>
     <style>
+        #container{
+            position: relative;
+            background-size: 100% 100%;
+            height: 94vh;
+            padding: 10px;
+            background-color: purple;
+            background-image: url(Imagens/target001.png);
+        }
+        #conteudo{
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            background-image: url(Imagens/target001.png);
+            background-size: 100% 100%;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
 
     </style>
 </head>
 <body>
-    <main>Titulo teste</main>
-    Bloco 1
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur alias accusamus amet eius odio quia illum nulla, maxime numquam explicabo, a necessitatibus dolore fugit culpa eligendi fuga perferendis. Cupiditate, iusto.
+    <section id="container">
+        <article id="conteudo" >
+            <article id="conteudo2">
+
+            </article>
+
+        </article>
+
+    </section>
  
 </body>
 </html>
