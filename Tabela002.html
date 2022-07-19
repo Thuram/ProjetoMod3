@@ -15,6 +15,7 @@
             width: 400px;
             border-collapse: collapse;
             border: 1px solid black;
+            position: relative; /*prender cabeçalho da tabela no topo para tabelas com muitas linhas */
             
         }
 
@@ -23,12 +24,18 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: #363636;
             color: white;
         }
 
         tbody > tr:nth-child(2n) {
             background-color: gray;
+        }
+
+        thead > tr > th {
+            position: sticky;   /*prender cabeçalho da tabela no topo para tabelas com muitas linhas */
+            top: 0;
+            background-color: #363636;
         }
 
         td {
@@ -52,6 +59,17 @@
             margin: 5px;
             ;
         }
+
+        .alou 
+        {
+            background-color: blueviolet;
+        }
+
+        .aloo 
+        {
+            background-color: red;
+        }
+
     </style>
 </head>
 <body>
@@ -59,6 +77,11 @@
     <table>
         <caption>População das Unidades Federativas</caption>
         <thead>
+            <colgroup>
+                <col class="alou">
+                <col class="aloo">
+    
+            </colgroup>
             <tr>
                 <th scope="col">Estados</th>
                 <th scope="col" style="width:90px;">População</th>
@@ -85,6 +108,67 @@
                 <td>Santa Catarina</td>
                 <td class="numero">11 000 000</td>
             </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">11 000 000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">11 000 000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">11 000 000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">11 000 000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">11 000 000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">11 000 000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">11 000 000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">11 000 000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">11 000 000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">11 000 000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">11 000 000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">11 000 000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">11 000 000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">11 000 000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">11 000 000</td>
+            </tr>
+
         </tbody>
         <tfoot>
             <tr>

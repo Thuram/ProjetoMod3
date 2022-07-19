@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela maluca</title>
+    <style>
+        table
+        {
+            border-collapse:collapse;
+            width: 300px;
+            height: 250px;
+            text-align: center;
+            margin: 20px;
+ 
+        }
+        td
+        {
+            border: 1px solid black;
+        }
+        .yellow 
+        {
+            background-color: yellow;
+        }
+        .green
+        {
+            background-color: green;
+        }
+
+        div.verde 
+        {
+            width: 20px;
+            height: 20px;
+            background-color: green;
+            display: inline-block;
+        }
+
+        div.amarelo
+        {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2> <div class="verde"></div> Verde = Colspan --> Horizontal </h2>
+    <h2> <div class="amarelo"></div> Amarelo = Rowspan --> Vertical</h2>
+
+    <table class="tab1">
+       
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td class="yellow" rowspan="2" >3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td class="green" colspan="3">8</td>
+            <td>9</td>
+
+        </tr>
+        <tr>
+            <td class="yellow" rowspan="2">10</td>
+            <td class="green" colspan="2">11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
+<br>
+    <table class="tab2">
+        <tr>
+            <td class="green" colspan="4">A</td>
+            <td class="yellow" rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td class="yellow" rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td class="green" colspan="4">N</td>
+        </tr>
+    </table>
+
+
+
+</body>
+</html>
