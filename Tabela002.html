@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            border: 1px solid black;
+            
+        }
+
+        tbody {
+            padding: 15px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: gray;
+        }
+
+        td {
+            font-weight: bold;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .numero {
+            text-align: right;
+        }
+
+        caption {
+            padding: 10px;
+            font-size: 1.3em;
+            font-weight: bold;
+            background-color: rgb(180, 194, 194);
+            margin: 5px;
+            ;
+        }
+    </style>
+</head>
+<body>
+    <h1>THead / TBody / TFoot</h1>
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estados</th>
+                <th scope="col" style="width:90px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">21 000 000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">19 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">15 000 000</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">12 000 000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">11 000 000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="numero"><strong>78 000 000</strong></td>
+            </tr>
+           
+        </tfoot>
+    </table>
+</body>
+</html>
